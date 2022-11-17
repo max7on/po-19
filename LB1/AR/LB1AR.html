@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <a-scene embedded arjs>
+        <a-marker type="pattern" url="pattern-The_Rolling_Stones_Tongue_Logo.patt">
+        <a-plane src="disturb.jpg" width="4" height="3" rotation="-45 0 0" position="0 0 0"></a-plane>
+        <a-cylinder src="wood.jpg" height="1" radius="0.2" position="0 0.714 -0.426" rotation="0 0 -90"
+        animation="property: position; to: 0 -0.495 0.778; dur: 4000; easing: linear; loop: true"
+        animation__2="property: rotation; to: 360 0 -90; dur: 4000; easing: linear; loop: true"></a-cylinder>
+        </a-marker>
+    </a-scene>
+    
+</html>
